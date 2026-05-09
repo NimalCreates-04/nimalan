@@ -1,88 +1,97 @@
- #type casting
-a=str(input("enter your name"))
+# TYPE CASTING
+a = str(input("Enter your name: "))
 print(type(a))
-b=float(input("enter yor hight"))
+
+b = float(input("Enter your height: "))
 print(type(b))
-#arthmathic operator
-a=int(input("enter a number "))
-b=int(input("enter anther number"))
-print('addtition',a+b)
-print('subtraction',a-b)
-print('multiplication',a*b)
-print('floor division',a/b,)
-print('integer division',a//b)
-print('remainder',a%b)
-print('power',a**b)
-#assignment opertors
-print("enter a number we can tell its square")
-a=int(input("enter a number"))
-a**=2
-print(a)
 
-print("enter a number we can tell its cube")
-a=int(input("enter a number"))
-a**=3
-print(a)
-#relational opertors
-age1=20
-age2=13
-print(age1==age2)
-print(age1!=age2)
-print(age1>age2)
-print(age1<age2)
-print(age1>=age2)
-print(age1<=age2)
-#logicial oprators
-age=18
-hight=160
-if(age>17)and(hight>159):
 
-    print("you pssed the exam")
+# ARITHMETIC OPERATORS
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+
+print("Addition =", a + b)
+print("Subtraction =", a - b)
+print("Multiplication =", a * b)
+print("Division =", a / b)
+print("Floor Division =", a // b)
+print("Remainder =", a % b)
+print("Power =", a ** b)
+
+
+# ASSIGNMENT OPERATORS
+print("Enter a number, we can tell its square")
+a = int(input("Enter a number: "))
+a **= 2
+print("Square =", a)
+
+print("Enter a number, we can tell its cube")
+a = int(input("Enter a number: "))
+a **= 3
+print("Cube =", a)
+
+
+# RELATIONAL OPERATORS
+age1 = 20
+age2 = 13
+
+print(age1 == age2)
+print(age1 != age2)
+print(age1 > age2)
+print(age1 < age2)
+print(age1 >= age2)
+print(age1 <= age2)
+
+
+# LOGICAL OPERATORS
+age = 18
+height = 160
+
+if (age > 17) and (height > 159):
+    print("You passed the exam")
 else:
-    print("you failed the exam")
-    
-level=20
-health=7
-if(level>25) or (health>5):
-    print("next level")
-else:
-    print("failed")
+    print("You failed the exam")
 
-a=True
-print(not(a))
 
-a=15
-if not(a>20):
-    print("greater")
+level = 20
+health = 7
+
+if (level > 25) or (health > 5):
+    print("Next level")
 else:
-    print("lesser")
-#special operators
-#identity operaor
-a=["apple","orange","dragon fruit"]
-b=["apple","orange","dragon fruit"]
+    print("Failed")
+
+
+a = True
+print(not a)
+
+
+a = 15
+
+if not(a > 20):
+    print("Not greater than 20")
+else:
+    print("Greater than 20")
+
+
+# SPECIAL OPERATORS
+# IDENTITY OPERATORS
+a = ["apple", "orange", "dragon fruit"]
+b = ["apple", "orange", "dragon fruit"]
+
 print(a is not b)
 
-a=b
+a = b
 print(a is b)
-#bitwise operator
-a=int(input("enter a number"))
-b=int(input("enter a number"))
-print(a&b)
-print(a|b)
-print(a^b)
+
+
+# BITWISE OPERATORS
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+
+print(a & b)
+print(a | b)
+print(a ^ b)
 print(~a)
-print(a<<3)    
-print(a>>3)
-
-      
-
-    
-    
-
-    
-
-    
-
-
-
-
+print(a << 3)
+print(a >> 3)
